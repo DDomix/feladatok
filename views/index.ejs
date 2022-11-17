@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>App</title>
+  </head>
+  <body>
+    <%= message %>
+    <p>
+      <%= honap %>
+    </p>
+    <p>
+      <% if(szam1>szam2){ %>
+        <% for(let count = szam2; count <= szam1; count++ ){ %>
+          <%= count %>
+        <% } %>
+      <% } else if(szam2>szam1){ %>
+        <% for(let count = szam2; count >= szam1; count-- ){ %>
+          <%= count %>
+        <% } %>
+      <% } else { %>
+        <%= egyenlo %>
+      <% } %>
+    </p>
+  </body>
+</html>
